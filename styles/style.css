@@ -1,0 +1,160 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+body:before {
+	width: 100%;
+	height: 100%;
+	content: " ";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url("../resources/media/backgrounds/royal-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.1;
+}
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+
+/*                                                  ROOT CONTIANER                                              */
+/* ============================================================================================================ */
+
+.root-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+
+/*                                                     HEADER                                                   */
+/* ============================================================================================================ */
+
+.header-container {
+	padding-top: 2%;
+	width: 100%;
+	display: flex;
+	flex-wrap: row nowrap;
+	margin-bottom: 119px;
+}
+
+.header-logo-container {
+	width: calc(50% + 127px);
+	height: calc(119px + 2%);
+	position: relative;
+}
+
+.header-logo-container img {
+	position: absolute;
+	transform: translateX(-50%);
+	right: 0;
+}
+
+.personal-data-container {
+	width: calc(50% - 127px);
+	padding-top: 15px;
+	position: relative;
+}
+.personal-data-container table {
+	position: absolute;
+	left: 15%;
+}
+
+.personal-data-container table th {
+	text-align: start;
+}
+
+#data-table td {
+	padding-left: 0.8em;
+}
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+
+/*                                              Main Container                                                  */
+/* ============================================================================================================ */
+.main-container {
+	width: 100%;
+	flex-grow: 1;
+	display: flexbox;
+	flex-wrap: column nowrap;
+}
+.order-details-container {
+	/* margin-top: 2em; */
+}
+
+.billing-details-container {
+	width: 100%;
+}
+
+#order-info-table {
+	margin-inline-start: 1em;
+	margin-top: 1em;
+}
+#order-info-table th {
+	text-align: start;
+}
+
+#order-details-table {
+	margin-inline-start: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: calc(100% - 1em);
+}
+
+#order-details-table,
+#order-details-table th {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+#order-details-table th {
+	padding: 0.5em 2.5em;
+}
+
+.billing-info-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: flex-end;
+}
+
+#billing-table {
+	margin-inline-end: 1em;
+	margin-top: 0.5em;
+}
+
+#billing-table,
+#billing-table th,
+#billing-table td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#billing-table td {
+	font-weight: bold;
+	padding: 0.3em 2.5em 0.3em 0.3em !important;
+}
+
+#billing-table th,
+#billing-table td {
+	padding: 0.2em 2.5em;
+}
+
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+
+/*                                                  Media Queries                                               */
+/* ============================================================================================================ */
+@media screen and (min-width: 1000px) {
+	.root-container {
+		padding: 0 10%;
+	}
+}
